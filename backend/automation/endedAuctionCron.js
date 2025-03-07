@@ -5,7 +5,7 @@ import { Bid } from "../models/bidSchema.js";
 import { sendEmail } from "../utils/sendEmail.js";
 import { calculateCommission } from "../controllers/commissionController.js";
 
-export const endedAuctionCron = () => {
+ const endedAuctionCron = () => {
   cron.schedule("*/1 * * * *", async () => {
       const now = new Date();
       console.log(now);
@@ -66,6 +66,7 @@ export const endedAuctionCron = () => {
 });
 };
 
+export default endedAuctionCron;
 
 // import cron from "node-cron";
 // import { Auction } from "../models/auctionSchema.js";

@@ -11,8 +11,8 @@ import auctionItemRouter from "./router/auctionItemRoutes.js";
 import bidRouter from "./router/bidRoutes.js"
 import commissionRouter from "./router/commissionRouter.js";
 import superAdminRouter from "./router/superAdminRoutes.js";
-import { endedAuctionCron } from "./automation/endedauctioncron.js";
 import { verifyCommissionCron } from "./automation/verifyCommissionCron.js";
+import endedAuctionCron from "./automation/endedAuctionCron.js";
 
 
 const app=express();
