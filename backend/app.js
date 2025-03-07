@@ -28,7 +28,7 @@ cloudinary.v2.config({
 });
 
 app.use(cors({
-    origin: ["http://localhost:5173"], // Frontend 5173 uper chale che etle tene Permission aapi 
+    origin: ["https://auction-edge-prince.netlify.app"], // Frontend 5173 uper chale che etle tene Permission aapi 
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"] 
